@@ -1,0 +1,81 @@
+:root {
+    --primary-color: #ffc911;
+    --secondary-color: #000000;
+    --tertiary-color: #cea520;
+    --light-gray: #f3f3f3;
+    --background-color: #ffffff;
+  }
+  
+  body {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.6;
+      background-color: var(--background-color);
+      color: var(--secondary-color);
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  h1 {
+      font-size: 30px;
+      font-weight: 700;
+      margin: 5px;
+  }
+  
+  h2 {
+      font-size: 24px;
+      font-weight: 700;
+      margin: 5px;
+  }
+  
+  h3 {
+      font-size: 18px;
+      font-weight: 700;
+      margin: 5px;
+  }
+  
+  a {
+    color: var(--secondary-color);
+  }
+  
+  a:hover {
+      color:var(--primary-color);
+  }
+  
+  a:active {
+      color:var(--tertiary-color);
+  }
+  
+  a:visited {
+      color:var(--secondary-color);
+  }
+  
+  button, .button, .about-button {
+      background-color: var(--primary-color);
+      color: var(--secondary-color);
+      font-size: 16px;
+      font-weight: 500;
+      line-height: inherit;
+      text-decoration: none;
+      border-color: var(--primary-color);
+      border-radius: 5px;
+      padding: 10px;
+      display:inline-block;
+  }
+  
+  button:hover, .button:hover {
+      background-color: var(--secondary-color);
+      color: var(--primary-color);
+      cursor: pointer;
+  }
+
+  .Pokedex-logo {
+    height: 100px;
+    width: auto;
+    margin: 10px;
+     }
