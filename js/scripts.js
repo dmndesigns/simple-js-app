@@ -35,16 +35,14 @@ return {
 
 })();
 
-document.write(pokemonRepository.getAll())
-
 //write Pokemon name and height, commenting on tallest
-/*getAll.forEach(function(pokeHeight) {
-    if (pokeHeight.height() > 1.1) {   
-    document.write(pokeHeight.name() + " (height: " + pokeHeight.height() + ") " + 'Wow, that\'s big!' + "<br>") 
+pokemonRepository.getAll().forEach(function(pokeHeight) {
+    if (pokeHeight.height > 1.1) {   
+    document.write(pokeHeight.name + " (height: " + pokeHeight.height + ") " + 'Wow, that\'s big!' + "<br>") 
     }
     else {
-        document.write(pokeHeight.name() + " (height: " + pokeHeight.height() + ") " + "<br>")
+        document.write(pokeHeight.name + " (height: " + pokeHeight.height + ") " + "<br>")
     }
 }
 )
-*/
+
