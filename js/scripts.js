@@ -1,6 +1,6 @@
 //define characteristics of relevant Pokemon
-var pokemonRepository = (function () {
-    var pokemonList = [
+let pokemonRepository = (function () {
+    let pokemonList = [
     {
         name: 'Bulbasaur', 
         height: 0.7 , 
@@ -24,25 +24,31 @@ function getAll() {
     return pokemonList;
 } 
 
-function add(pokemon) {
-    pokemonList.push(pokemon);
-}
+function showDetails(pokemon) {
+    console.log(pokemonRepository.getAll());
+};
+
+function addListItem(pokemon){
+    let allPokemon = document.querySelector(".pokemon-list");
+    let listpokemon = document.createElement("li");
+    let button = document.createElement("button");
+    button.innerText = pokemon.name;
+    button.classList.add("button-class");
+    listpokemon.appendChild(button);
+    allPokemon.appendChild(listpokemon);
+    addEventListener('click',showDetails(pokemon));
+};
 
 return {
     getAll: getAll,
-    add: add
+    addListItem: addListItem
 };
 
 })();
 
-//write Pokemon name and height, commenting on tallest
-pokemonRepository.getAll().forEach(function(pokeHeight) {
-    if (pokeHeight.height > 1.1) {   
-    document.write(pokeHeight.name + " (height: " + pokeHeight.height + ") " + 'Wow, that\'s big!' + "<br>") 
-    }
-    else {
-        document.write(pokeHeight.name + " (height: " + pokeHeight.height + ") " + "<br>")
-    }
-}
-)
+pokemonRepository.getAll().forEach(function(pokemon) {
+    pokemonRepository.addListItem(pokemon);
+});
+
+
 
