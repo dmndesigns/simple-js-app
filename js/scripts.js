@@ -25,7 +25,7 @@ function getAll() {
 } 
 
 function showDetails(pokemon) {
-    console.log(pokemonRepository.getAll());
+    console.log();
 };
 
 function addListItem(pokemon){
@@ -36,12 +36,12 @@ function addListItem(pokemon){
     button.classList.add('button-class');
     listpokemon.appendChild(button);
     allPokemon.appendChild(listpokemon);
-    button.addEventListener('click',showDetails); 
-};
+    button.addEventListener('click',showDetails)}; 
 
 return {
     getAll: getAll,
-    addListItem: addListItem
+    addListItem: addListItem,
+    //showDetails: showDetails
 };
 
 })();
