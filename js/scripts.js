@@ -29,14 +29,14 @@ function showDetails(pokemon) {
 };
 
 function addListItem(pokemon){
-    let allPokemon = document.querySelector(".pokemon-list");
-    let listpokemon = document.createElement("li");
-    let button = document.createElement("button");
+    let allPokemon = document.querySelector('.pokemon-list');
+    let listpokemon = document.createElement('li');
+    let button = document.createElement('button');
     button.innerText = pokemon.name;
-    button.classList.add("button-class");
+    button.classList.add('button-class');
     listpokemon.appendChild(button);
     allPokemon.appendChild(listpokemon);
-    addEventListener('click',showDetails(pokemon));
+    button.addEventListener('click',showDetails); 
 };
 
 return {
