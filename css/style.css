@@ -78,4 +78,42 @@
     height: 100px;
     width: auto;
     margin: 10px;
-     }
+  }
+
+  #modal-container { 
+  display: none;
+  }
+
+  #modal-container.is-visible {
+    position: fixed;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 50%;
+    height: 200px;
+    background: light-gray;
+    z-index: 999;
+    overflow: auto;
+    display: grid;
+    text-align: center;
+  }
+
+  .modal {
+      margin: auto;
+      display: inline-block;
+      box-sizing: border-box;
+      padding: 20px;
+      width: 100%;
+      max-width: 500px;
+      text-align: left;
+  }
+
+  .modal-close {
+      float: right;
+      -webkit-appearance: none;
+      border: 1px;
+      border-radius: 5px;
+      border-color: var(--secondary-color);
+      background: none;
+      text-decoration: underline;
+  }
+
