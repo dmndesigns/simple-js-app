@@ -101,17 +101,23 @@
 
   #modal-container.is-visible {  
     display: block;
-    position:sticky;
+    position: fixed;
+    float: left;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    margin: auto;
     padding: 20px;
     box-sizing: border-box;
     background-color: #f3f3f3;
+    text-align: center;
     overflow: auto;
     z-index: 998;
   }
 
   .modal {  
     margin: auto;
-    position: sticky;
     background-color: #ffffff;
     box-sizing: border-box;
     padding: 20px;
